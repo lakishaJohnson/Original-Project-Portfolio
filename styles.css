@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #040f16;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: #040f16;
+    border-bottom: 5px solid #de6b48;
+    color: #ececec;
+    padding: 0.5rem 15%;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+header h1 {
+    margin: 15px 0;
+    }
+
+    nav ul {
+    padding: 15px 15px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    }
+
+    nav a {
+    color: #ececec;
+    text-decoration: none;
+    }
+
+    nav a:hover {
+    color: #de6b48;
+}
+
+.splash {
+    background-image: url("https://cdn.jocofoampro.com/uploads/2022/03/25152616/MicrosoftTeams-image-1024x684.jpg");
+    background-position: 50% 50%;
+    background-size: 100%;
+    border-bottom: 5px solid #de6b48;
+    }
+
+    .splash h2 {
+    color: black;
+    font-size: 3vw;
+    margin: 0;
+    padding: 15% 0;
+    text-align: center;
+}
+
+span {
+  font-size: 24px; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
+  color: blue; /* Change the text color */
+}
