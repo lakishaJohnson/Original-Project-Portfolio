@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: pink;
   }
 
   html {
@@ -12,8 +12,8 @@ body {
 
 header {
   background: lightblue;
-  border-bottom: 5px solid #dedc48;
-  color: orangered;
+  border-bottom: 5px solid red;
+  color: black;
   padding: 0.5rem 15%;
   text-align: center;
   display: grid;
@@ -60,11 +60,12 @@ nav a:hover {
 
 img {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 70%;
   transform: translate(-50%, -50%);
   animation-name: float-in;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-  width: 300px;
+  width: 350px;
 }
+
