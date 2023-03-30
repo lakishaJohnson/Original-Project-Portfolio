@@ -1,69 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
-html, body {
+body {
     margin: 0;
     padding: 0;
-}
+    background-color: black;
+  }
 
-html {
+  html {
     color: #040f16;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-}
+  }
 
 header {
-    background: #040f16;
-    border-bottom: 5px solid #de6b48;
-    color: #ececec;
-    padding: 0.5rem 15%;
-    text-align: center;
-
-    display: grid;
-    grid-template-columns: 250px 1fr;
+  background: lightblue;
+  border-bottom: 5px solid #dedc48;
+  color: orangered;
+  padding: 0.5rem 15%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 250px 1fr;
 }
 
 header h1 {
-    margin: 15px 0;
-    }
-
-    nav ul {
-    padding: 15px 15px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    }
-
-    nav ul li {
-    display: inline-block;
-    margin: 0 0.5rem;
-    }
-
-    nav a {
-    color: #ececec;
-    text-decoration: none;
-    }
-
-    nav a:hover {
-    color: #de6b48;
+  margin: 15px 0;
 }
 
-.splash {
-    background-image: url("https://cdn.jocofoampro.com/uploads/2022/03/25152616/MicrosoftTeams-image-1024x684.jpg");
-    background-position: 50% 50%;
-    background-size: 100%;
-    border-bottom: 5px solid #de6b48;
-    }
+nav ul {
+  padding: 15px 15px;
 
-    .splash h2 {
-    color: black;
-    font-size: 3vw;
-    margin: 0;
-    padding: 15% 0;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-span {
-  font-size: 24px; /* Set the font size */
-  font-weight: bold; /* Make the text bold */
-  color: blue; /* Change the text color */
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: 25px;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav a:hover {
+  transform: rotate(15deg);
+  color: #de6b48;
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: float-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  width: 300px;
 }
