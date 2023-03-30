@@ -1,0 +1,50 @@
+#question-box {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin: 20px;
+}
+
+#question {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#question:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0077cc;
+  border: 3px solid red;
+  margin-right: 70%;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+#try-again-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0077cc;
+  border: 3px solid red;
+  margin-right: 70%;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
