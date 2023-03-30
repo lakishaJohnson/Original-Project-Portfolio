@@ -2,7 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="formStyle.css" />
     <script defer src="script.js"></script>
+    <script defer src="form.js"></script>
   </head>
   <body>
     <header>
@@ -18,5 +20,10 @@
         </ul>
       </nav>
     </header>
+    <form id="question-box">
+      <label for="question">Do you feel lucky?</label>
+      <input type="text" id="question" placeholder="Pick a card" />
+      <input type="submit" value="submit" />
+    </form>
   </body>
 </html>
