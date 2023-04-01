@@ -1,14 +1,14 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: pink;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
 
-  html {
-    color: #040f16;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  }
+html {
+  color: #040f16;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
 
 header {
   background: lightblue;
@@ -21,14 +21,16 @@ header {
 }
 
 header h1 {
-  margin: 15px 0;
+  margin-left: 15px 0;
+  /* background-color: blue; */
+  color: rgb(243, 131, 150);
+  
 }
 
 nav ul {
   padding: 15px 15px;
-
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 nav ul li {
@@ -38,7 +40,7 @@ nav ul li {
 }
 
 nav a {
-  color: whitesmoke;
+  color: rgb(243, 131, 150);
   text-decoration: none;
 }
 
@@ -60,12 +62,12 @@ nav a:hover {
 
 img {
   position: absolute;
-  top: 60%;
-  left: 70%;
+  /* display: block;  */
+  top: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   animation-name: float-in;
   animation-duration: 2s;
   animation-timing-function: ease-out;
   width: 350px;
 }
-
