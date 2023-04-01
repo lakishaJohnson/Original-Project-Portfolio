@@ -10,35 +10,33 @@ function getRandomCard() {
         .then((response) => response.json())
         .then((data) => {
           // Check if the drawn card is the queen of spades
-          if (data.cards[0].value === "Q" && data.cards[0].suit === "SPADES") {
+          if (
+            data.cards[0].value === "QUEEN" &&
+            data.cards[0].suit === "SPADES"
+          ) {
             // Draw a new card and try again
             getRandomCard();
           } else {
             // Update the HTML with the card image and value, and add a "Try again" button
             const cardImgUrl = data.cards[0].image;
             const cardValue = data.cards[0].value;
-            const cardSuit = data.cards[0].suit
-            const tryAgainButton =
-              '<button id="try-again-button">Try again</button>';
-            document.querySelector("#question-box").innerHTML = `
-                <img src="${cardImgUrl}" alt="${cardValue}" />
-                <p>You drew a ${cardValue} of ${cardSuit}!</p>
-                ${tryAgainButton}
-              `;
-            // Add an event listener to the "Try again" button
-            document
-              .querySelector("#try-again-button")
-              .addEventListener("click", function () {
-                getRandomCard();
-              });
-          }
-        });
-    });
-}
+            const cardSuit = data.cards[0].suit;
 
+            const tryAgainButton =
+              '<button id="try-again-button">Another Hit</button>';
+            document.querySelector(".cardImage").src = cardImgUrl;
+            document.querySelector("#question-box").innerHTML = `
+            <p>You drew a ${cardValue} of ${cardSuit}!</p>
+            ${tryAgainButton}`;
+      }
+    });
+});
+}
 document
   .querySelector("#question-box")
   .addEventListener("submit", function (event) {
     event.preventDefault();
     getRandomCard();
   });
+        
+
